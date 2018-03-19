@@ -18,7 +18,7 @@ class IndexController
             ->options([
                 'color' => ['#000000','#FFFFFF','#666666'],
             ])
-            ->dataset('Element 1', 'line', [5,20,100]);
+            ->dataset('Element 1', 'pie', [5,20,100]);
 
         return view('test', ['chart' => $chart]);
     }

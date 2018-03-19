@@ -1489,7 +1489,7 @@ class PHPlot
      * @param string $which_font  Font filename or path; omit or NULL to use a default font
      * @return bool  True (False on error if an error handler returns True)
      */
-    function SetDefaultTTFont($which_font = NULL)
+    function SetDefaultTTFont($which_font = 'DejaVuSans.ttf')
     {
         $this->default_ttfont = $which_font;
         return $this->SetUseTTF(TRUE);

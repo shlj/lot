@@ -2004,6 +2004,8 @@ return array(
     'PHP_Token_XOR_EQUAL' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
     'PHP_Token_YIELD_FROM' => $vendorDir . '/phpunit/php-token-stream/src/Token.php',
+    'PHPlot' => $vendorDir . '/davefx/phplot/phplot/phplot.php',
+    'PHPlot_truecolor' => $vendorDir . '/davefx/phplot/phplot/phplot.php',
     'Parsedown' => $vendorDir . '/erusev/parsedown/Parsedown.php',
     'PharIo\\Manifest\\Application' => $vendorDir . '/phar-io/manifest/src/values/Application.php',
     'PharIo\\Manifest\\ApplicationName' => $vendorDir . '/phar-io/manifest/src/values/ApplicationName.php',

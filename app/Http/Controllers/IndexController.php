@@ -1,28 +1,34 @@
 <?php
-# PHPlot Demo
-# 2008-01-09 ljb
-# For more information see http://sourceforge.net/projects/phplot/
+/**
+ * @name IndexController
+ * @desc IndexController
+ * @author hang.song02@ele.me
+ */
 
-# Load the PHPlot class library:
-require_once 'phplot.php';
+namespace App\Http\Controllers;
 
+
+class IndexController
+{
+    public function index()
+    {
 # Define the data array: Label, the 3 data sets.
 # Year,  Features, Bugs, Happy Users:
 $data = array(
-  array('2001',  60,  35,  20),
-  array('2002',  65,  30,  30),
-  array('2003',  70,  25,  40),
-  array('2004',  72,  20,  60),
-  array('2005',  75,  15,  70),
-  array('2006',  77,  10,  80),
-  array('2007',  80,   5,  90),
+    array('2001',  60,  35,  20),
+    array('2002',  65,  30,  30),
+    array('2003',  70,  25,  40),
+    array('2004',  72,  20,  60),
+    array('2005',  75,  15,  70),
+    array('2006',  77,  10,  80),
+    array('2007',  80,   5,  90),
 );
 
 # Create a PHPlot object which will make a 600x400 pixel image:
-$p = new PHPlot(600, 400);
+$p = new \PHPlot(600, 400);
 
 # Use TrueType fonts:
-$p->SetDefaultTTFont('DejaVuSans.ttf');
+//$p->SetDefaultTTFont('DejaVuSans.ttf');
 
 # Set the main plot title:
 $p->SetTitle('PHPlot Customer Satisfaction (estimated)');
@@ -60,3 +66,6 @@ $p->SetYTickLabelPos('none');
 $p->DrawGraph();
 
 
+
+    }
+}

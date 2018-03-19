@@ -16,7 +16,7 @@ class IndexController
         $chart = new SampleChart();
         $chart->labels([1,2,3])
             ->dataset('Element 1', 'pie', [5,20,100])
-            ->color(['#000000','#FFFFFF','#666666']);
+            ->color(['#dc143c','#800080','#0000ff']);
 
         return view('test', ['chart' => $chart]);
     }

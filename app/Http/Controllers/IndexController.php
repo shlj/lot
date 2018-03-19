@@ -8,7 +8,6 @@
 namespace App\Http\Controllers;
 
 use App\Charts\SampleChart;
-use Charts;
 
 class IndexController
 {

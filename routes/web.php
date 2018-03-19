@@ -14,5 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/index', "IndexController@index");
+Route::group(['middleware' => 'auth'],function () {
+    Route::get('/index', "IndexController@index");
+});
